@@ -10,7 +10,7 @@
 Even these parts have their sub-parts 
 (parts and their description)
 
-###$Title: 
+###Title: 
 - up bar; 
 - basic part; 
 - bottom liner gradient;  
