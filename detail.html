@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Project</title>
+    <link rel="stylesheet" href="detail.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3948566989.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <div id="element-details">
+        Loading.......
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const params = new URLSearchParams(window.location.search);
+            const adId = params.get("id");
+            const adDetailsContainer = document.getElementById(".element-detils");
+            const adData = {
+                rul: {
+                    title: "",
+                    description: "",
+                    rulles: "",
+                    mod: "",
+                    down_inst: "",
+                },
+                his: {
+                    title: "",
+                    description: "",
+                    plans: "",
+                },
+                bcc: {
+                    title: "",
+                    description: "",
+                    buy_cup_of_coffe: "",
+                },
+            }
+            if (adData[adId]) {
+                const ad = adData[adId];
+                adDetailsContainer.innerHTML = `
+                <!-- верхнiй сайдбар -->
+        <div class="p1_top">
+            <!-- назва проєкту -->
+            <div class="p1_name">
+                <h3>Itstant Project</h3>
+            </div>
+            <!-- зміна мови -->
+            <div class="p1_change">
+                <i class="fa-solid fa-globe"></i>
+                <input class="p1_input" type="text" />
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+
+        <main class="main">
+            <div class="ad">
+                 
+            </div>
+        </main>
+                `
+            }
+        })
+    </script>
+</body>
+
+</html>

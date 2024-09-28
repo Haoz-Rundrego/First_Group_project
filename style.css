@@ -67,9 +67,7 @@ body {
     font-size: 56px;
 }
 
-.p2_second_parts_frame_c3,
-.p2_second_parts_frame_c2,
-.p2_second_parts_frame_c1 {
+.p2_second_parts_frame {
     height: 600px;
     width: 400px;
     background-color: #545257;
